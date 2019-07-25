@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  font-size: 80px;
+  text-align: center;
+  color: #ED3842;
+  font-family: 'Roboto Mono', monospace;
+  margin: 20px;
+}
+img{
+  border-radius: 50%;
+  border: 10px solid white;
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+}
+img: hover{
+  color: black;
+}
+.wholeBack{
+  background-color: #F6EEE4;
+}
+.oneRow{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.secRow{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.threeRow{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.fourRow{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.fiveRow{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.gif{
+  position: fixed;
+   bottom: 0;
+   z-index: 10;
+   animation: drive 40s infinite;
+ }
+ @keyframes drive {
+   0% {
+     left: -25%;
+   }
+   100% {
+     left: 200%;
+   }
+   /* Finish changes by here */
+   20% {
+     transform: translate(200px, 0);
+   }
+ }
+@media screen and (max-width: 500px){
+  .oneRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .secRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .threeRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fourRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fiveRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
